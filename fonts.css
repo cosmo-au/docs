@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Graphik";
+  src: url("https://cosmogroup.io/webfonts/Graphik-Medium.eot");
+  src: url("https://cosmogroup.io/webfonts/Graphik-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cosmogroup.io/webfonts/Graphik-Medium.woff2") format("woff2"),
+    url("https://cosmogroup.io/webfonts/Graphik-Medium.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("https://cosmogroup.io/webfonts/Graphik-Regular.eot");
+  src: url("https://cosmogroup.io/webfonts/Graphik-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cosmogroup.io/webfonts/Graphik-Regular.woff2") format("woff2"),
+    url("https://cosmogroup.io/webfonts/Graphik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

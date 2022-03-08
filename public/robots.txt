@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://cosmogroup.io
+
+# Sitemaps
+Sitemap: https://cosmogroup.io/sitemap.xml
+Sitemap: https://cosmogroup.io/sitemap-0.xml

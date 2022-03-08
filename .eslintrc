@@ -1,0 +1,10 @@
+{
+  "extends": ["@cosmo-au/eslint-config-cosmo"],
+  "rules": {
+    "import/no-unresolved": "off",
+    "@next/next/no-html-link-for-pages": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-sort-props": 1,
+    "react/sort-prop-types": 1
+  }
+}

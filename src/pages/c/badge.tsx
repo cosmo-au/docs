@@ -39,7 +39,7 @@ function PagesComponentsBadge() {
         <Heading level={2}>Basic Usage</Heading>
         <Element bottom={4}>
           <Card border>
-            <Badge theme='border'>Basic Badge</Badge>
+            <Badge>Basic Badge</Badge>
           </Card>
         </Element>
         <CodeBlock language='javascript' showLineNumbers text='<Badge >Basic Badge</Badge>' />
@@ -48,9 +48,7 @@ function PagesComponentsBadge() {
         <Heading level={2}>Dot</Heading>
         <Element bottom={4}>
           <Card border>
-            <Badge dot='pulse' theme='border'>
-              Badge with Dot
-            </Badge>
+            <Badge dot='pulse'>Badge with Dot</Badge>
           </Card>
         </Element>
         <CodeBlock language='javascript' showLineNumbers text="<Badge dot='pulse' >Badge with Dot</Badge>" />

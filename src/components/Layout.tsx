@@ -1,17 +1,8 @@
-import {
-  Block,
-  Column,
-  Card,
-  Button,
-  Heading,
-  Badge,
-  Section,
-  Element,
-} from "@cosmo-au/design-system";
-import { NextSeo } from "next-seo";
-import { GithubLogo, WarningCircle } from "phosphor-react";
-import { ReactNode } from "react";
-import { CodeBlock } from "react-code-blocks";
+import { Block, Column, Card, Button, Heading, Badge, Section, Element } from '@cosmo-au/design-system';
+import { NextSeo } from 'next-seo';
+import { GithubLogo, WarningCircle } from 'phosphor-react';
+import { ReactNode } from 'react';
+import { CodeBlock } from 'react-code-blocks';
 
 export interface Props {
   name: string;
@@ -21,33 +12,26 @@ export interface Props {
     value: string;
   }>;
   children: ReactNode;
-  parent: "Components" | "Layouts";
+  parent: 'Components' | 'Layouts';
 }
 
-export default function Layout({
-  name,
-  github = "#",
-  contents,
-  children,
-  parent,
-}) {
+export default function Layout({ name, github = '#', contents, children, parent }) {
   return (
     <>
       <NextSeo title={name} />
-      <Block bottom={4} inner theme="alternate" top={10}>
+      <Block bottom={4} inner theme='alternate' top={10}>
         <Section>
           <Column offset={20}>
             <Heading
               css={{
-                verticalAlign: "middle",
+                verticalAlign: 'middle',
               }}
               inline
               inlineSpacer={5}
-              level={1}
-            >
+              level={1}>
               {name}
             </Heading>
-            <Badge dot="pulse" inline theme="navy">
+            <Badge dot='pulse' inline theme='navy'>
               {parent}
             </Badge>
           </Column>
@@ -57,23 +41,24 @@ export default function Layout({
         <Section>
           <Column
             css={{
-              marginTop: "-7.5%",
-              height: "100%",
+              marginTop: '-7.5%',
+              height: '100%',
+              tablet: {
+                marginTop: 'auto',
+              },
             }}
-            width={20}
-          >
+            width={20}>
             <Card border>
               <Heading
                 css={{
                   opacity: 0.5,
                 }}
-                level={5}
-              >
+                level={5}>
                 Contents
               </Heading>
 
               <Heading level={5}>
-                <a href="#start">Installation</a>
+                <a href='#start'>Installation</a>
               </Heading>
               {contents &&
                 contents.map(({ name, value }) => (
@@ -85,50 +70,46 @@ export default function Layout({
                 ))}
             </Card>
           </Column>
-          <Column width={80}>
+          <Column
+            css={{
+              tablet: {
+                pt: '$6',
+              },
+            }}
+            width={80}>
             <Element bottom={10}>
-              <a href={github} rel="noreferrer" target="_blank">
-                <Button
-                  icon={<GithubLogo opacity={0.4} />}
-                  inline
-                  inlineSpacer={5}
-                >
+              <a href={github} rel='noreferrer' target='_blank'>
+                <Button icon={<GithubLogo opacity={0.4} />} inline inlineSpacer={5}>
                   Code
                 </Button>
               </a>
-              <a
-                href="https://github.com/cosmo-au/design-system/issues/new"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <Button icon={<WarningCircle opacity={0.4} />}>
-                  Report Issue
-                </Button>
+              <a href='https://github.com/cosmo-au/design-system/issues/new' rel='noreferrer' target='_blank'>
+                <Button icon={<WarningCircle opacity={0.4} />}>Report Issue</Button>
               </a>
             </Element>
-            <Element bottom={10} id="installation">
+            <Element bottom={10} id='installation'>
               <Heading level={2}>Installation</Heading>
 
               <CodeBlock
-                language="javascript"
+                language='javascript'
                 showLineNumbers
                 text={
-                  "/*  Ensure you have installed the required packages (phosphor-react and nookies) */ \n" +
-                  "yarn add @cosmo-au/design-system\n" +
-                  "\n" +
-                  "/* Wrap your _app.tsx in the theme provider <Context> */ \n" +
+                  '/*  Ensure you have installed the required packages (phosphor-react and nookies) */ \n' +
+                  'yarn add @cosmo-au/design-system\n' +
+                  '\n' +
+                  '/* Wrap your _app.tsx in the theme provider <Context> */ \n' +
                   "import { Context } from '@cosmo-au/design-system';\n" +
                   "import { AppProps } from 'next/app';\n" +
-                  "\n" +
-                  "function MyApp ({ Component, pageProps }: AppProps) {\n" +
-                  "  return (\n" +
-                  "    <Context>\n" +
-                  "       <Component {...pageProps} />\n" +
-                  "    </Context>\n" +
-                  "  );\n" +
-                  "};\n" +
-                  "\n" +
-                  "export default MyApp; \n"
+                  '\n' +
+                  'function MyApp ({ Component, pageProps }: AppProps) {\n' +
+                  '  return (\n' +
+                  '    <Context>\n' +
+                  '       <Component {...pageProps} />\n' +
+                  '    </Context>\n' +
+                  '  );\n' +
+                  '};\n' +
+                  '\n' +
+                  'export default MyApp; \n'
                 }
               />
             </Element>

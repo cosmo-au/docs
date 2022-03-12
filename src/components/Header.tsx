@@ -111,7 +111,9 @@ export default function Header() {
             </a>
           </Heading>
           <Button inline inlineSpacer={3}>
-            <GithubLogo />
+            <a href='https://github.com/cosmo-au/design-system' rel='noreferrer' target='_blank'>
+              <GithubLogo />
+            </a>
           </Button>
           <Switch />
         </Column>

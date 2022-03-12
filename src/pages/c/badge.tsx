@@ -1,6 +1,5 @@
-import { Badge, Card, Element, Heading } from '@cosmo-au/design-system';
+import { Badge, Card, Code, Element, Heading } from '@cosmo-au/design-system';
 import type { NextPage } from 'next';
-import { CodeBlock } from 'react-code-blocks';
 
 import Layout from '../../components/Layout';
 
@@ -33,7 +32,7 @@ function PagesComponentsBadge() {
         <Heading bottom={4} level={5}>
           Import the component
         </Heading>
-        <CodeBlock language='javascript' showLineNumbers text="import { Badge } from '@cosmo-au/design-system';" />
+        <Code copy>{"import { Badge } from '@cosmo-au/design-system';"}</Code>
       </Element>
       <Element bottom={10} id='basic'>
         <Heading level={2}>Basic Usage</Heading>
@@ -42,7 +41,7 @@ function PagesComponentsBadge() {
             <Badge>Basic Badge</Badge>
           </Card>
         </Element>
-        <CodeBlock language='javascript' showLineNumbers text='<Badge >Basic Badge</Badge>' />
+        <Code copy>{'<Badge >Basic Badge</Badge>'}</Code>
       </Element>
       <Element bottom={10} id='dot'>
         <Heading level={2}>Dot</Heading>
@@ -51,7 +50,7 @@ function PagesComponentsBadge() {
             <Badge dot='pulse'>Badge with Dot</Badge>
           </Card>
         </Element>
-        <CodeBlock language='javascript' showLineNumbers text="<Badge dot='pulse' >Badge with Dot</Badge>" />
+        <Code copy>{"<Badge dot='pulse' >Badge with Dot</Badge>"}</Code>
       </Element>
       <Element bottom={10} id='api'>
         <Heading level={2}>API Reference</Heading>

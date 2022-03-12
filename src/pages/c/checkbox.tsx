@@ -1,46 +1,40 @@
-import { Card, Checkbox, Element, Heading } from "@cosmo-au/design-system";
-import type { NextPage } from "next";
-import { CodeBlock } from "react-code-blocks";
+import { Card, Checkbox, Code, Element, Heading } from '@cosmo-au/design-system';
+import type { NextPage } from 'next';
 
-import Layout from "../../components/Layout";
+import Layout from '../../components/Layout';
 
 function PagesComponentsCheckbox() {
   return (
     <Layout
       contents={[
         {
-          name: "Getting Started",
-          value: "#start",
+          name: 'Getting Started',
+          value: '#start',
         },
         {
-          name: "Basic Usage",
-          value: "#basic",
+          name: 'Basic Usage',
+          value: '#basic',
         },
         {
-          name: "Tooltip",
-          value: "#tooltip",
+          name: 'Tooltip',
+          value: '#tooltip',
         },
         {
-          name: "API Reference",
-          value: "#api",
+          name: 'API Reference',
+          value: '#api',
         },
       ]}
-      github="https://github.com/cosmo-au/design-system/blob/main/src/components/Input/Input.Checkbox.tsx"
-      name="Checkbox"
-      parent="Components"
-    >
-      <Element bottom={10} id="start">
+      github='https://github.com/cosmo-au/design-system/blob/main/src/components/Input/Input.Checkbox.tsx'
+      name='Checkbox'
+      parent='Components'>
+      <Element bottom={10} id='start'>
         <Heading level={2}>Getting Started</Heading>
         <Heading bottom={4} level={5}>
           Import the component
         </Heading>
-        <CodeBlock
-          language="javascript"
-          showLineNumbers
-          text="import { Checkbox } from '@cosmo-au/design-system';"
-        />
+        <Code copy>{"import { Checkbox } from '@cosmo-au/design-system';"}</Code>
       </Element>
-      <Element bottom={10} id="basic">
+      <Element bottom={10} id='basic'>
         <Heading level={2}>Basic Usage</Heading>
         <Element bottom={4}>
           <Card border>
@@ -53,28 +47,18 @@ function PagesComponentsCheckbox() {
             <Checkbox checked>Checked checkbox</Checkbox>
           </Card>
         </Element>
-        <CodeBlock
-          language="javascript"
-          showLineNumbers
-          text={
-            "<Checkbox>Normal checkbox</Checkbox>\n<Checkbox size={2}>Small checkbox</Checkbox>\n<Checkbox checked>Checked checkbox</Checkbox>"
-          }
-        />
+        <Code copy>{'<Checkbox>Normal checkbox</Checkbox>\n <Checkbox size={2}>Small checkbox</Checkbox>\n Checkbox checked>Checked checkbox</Checkbox>'}</Code>
       </Element>
-      <Element bottom={10} id="tooltip">
+      <Element bottom={10} id='tooltip'>
         <Heading level={2}>Tooltip</Heading>
         <Element bottom={4}>
           <Card border>
-            <Checkbox tooltip="more info">Checkbox with Tooltip</Checkbox>
+            <Checkbox tooltip='more info'>Checkbox with Tooltip</Checkbox>
           </Card>
         </Element>
-        <CodeBlock
-          language="javascript"
-          showLineNumbers
-          text="<Checkbox tooltip='more info'>Checkbox with Tooltip</Checkbox>"
-        />
+        <Code copy>{"<Checkbox tooltip='more info'>Checkbox with Tooltip</Checkbox>"}</Code>
       </Element>
-      <Element bottom={10} id="api">
+      <Element bottom={10} id='api'>
         <Heading level={2}>API Reference</Heading>
         <Element bottom={4}>
           <Card border>Todo</Card>

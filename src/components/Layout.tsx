@@ -1,8 +1,7 @@
-import { Block, Column, Card, Button, Heading, Badge, Section, Element } from '@cosmo-au/design-system';
+import { Block, Column, Card, Button, Heading, Badge, Section, Element, Code } from '@cosmo-au/design-system';
 import { NextSeo } from 'next-seo';
 import { GithubLogo, WarningCircle } from 'phosphor-react';
 import { ReactNode } from 'react';
-import { CodeBlock } from 'react-code-blocks';
 
 export interface Props {
   name: string;
@@ -21,7 +20,7 @@ export default function Layout({ name, github = '#', contents, children, parent 
       <NextSeo title={name} />
       <Block bottom={4} inner theme='alternate' top={10}>
         <Section>
-          <Column offset={20}>
+          <Column offset={20} width={80}>
             <Heading
               css={{
                 verticalAlign: 'middle',
@@ -89,12 +88,8 @@ export default function Layout({ name, github = '#', contents, children, parent 
             </Element>
             <Element bottom={10} id='installation'>
               <Heading level={2}>Installation</Heading>
-
-              <CodeBlock
-                language='javascript'
-                showLineNumbers
-                text={
-                  '/*  Ensure you have installed the required packages (phosphor-react and nookies) */ \n' +
+              <Code copy>
+                {'/*  Ensure you have installed the required packages (phosphor-react and nookies) */ \n' +
                   'yarn add @cosmo-au/design-system\n' +
                   '\n' +
                   '/* Wrap your _app.tsx in the theme provider <Context> */ \n' +
@@ -109,9 +104,8 @@ export default function Layout({ name, github = '#', contents, children, parent 
                   '  );\n' +
                   '};\n' +
                   '\n' +
-                  'export default MyApp; \n'
-                }
-              />
+                  'export default MyApp; \n'}
+              </Code>
             </Element>
             {children}
             <Element>

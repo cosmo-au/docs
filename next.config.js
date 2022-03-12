@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
 
   images: {
-    domains: ["cosmogroup.io"],
+    domains: ['cosmogroup.io'],
   },
 };
 

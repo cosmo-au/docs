@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://cosmogroup.io',
+  siteUrl: 'https://design.cosmogroup.io',
   generateRobotsTxt: true, // (optional)
 };

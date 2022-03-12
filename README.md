@@ -1,6 +1,6 @@
-# website
+# docs
 
-Cosmo om the interwebs.
+Documentation for the Cosmo Design System.
 
 ### Develop
 

@@ -1,55 +1,98 @@
-import { Badge, Block, Button, Column, Element, Heading, Section } from '@cosmo-au/design-system';
-import type { NextPage } from 'next';
-import { NextSeo } from 'next-seo';
-import Link from 'next/link';
-import { ArrowUpRight, Tag } from 'phosphor-react';
+import { Stack, Text, View, Box, Badge, Divider, Code } from '@cosmo-au/design-system';
+import { BoundingBox, Cake, Download } from 'phosphor-react';
 
-function PagesHome() {
+export default function Home(): JSX.Element {
   return (
     <>
-      <NextSeo title='Cosmo Design System' titleTemplate='%s' />
+      <View inverted container top={8} bottom={7}>
+        <Stack direction='row'>
+          <Stack direction='column' width={60} offset={20} align='center'>
+            <Text as='h1' bottom={4}>
+              The Cosmo Design System enforces strict component APIs and performance parameters to streamline development across projects.
+            </Text>
+            <Badge inline={4}>
+              <a href='https://nextjs.org/docs/basic-features/typescript' target='_blank'>
+                Next.js
+              </a>
+            </Badge>
+            <Badge inline={4}>
+              <a href='https://www.typescriptlang.org' target='_blank'>
+                Typescript
+              </a>
+            </Badge>
+            <Badge>
+              <a href='https://stitches.dev/docs/benchmarks' target='_blank'>
+                Stitches
+              </a>
+            </Badge>
+          </Stack>
+        </Stack>
+      </View>
+      <View container top={7} bottom={8}>
+        <Stack direction='row' flex='stretch'>
+          <Stack direction='column' width={33}>
+            <Box theme='border'>
+              <Badge theme='blue' inline={5}>
+                <Download size={25} />
+              </Badge>
+              <Text as='h4' inline='auto'>
+                Install
+              </Text>
 
-      <Block bottom={10} inner theme='alternate' top={10}>
-        <Section>
-          <Column width={50}>
-            <Heading level={1}>The Cosmo Design System enforces strict component APIs and performance parameters to streamline development across projects.</Heading>
-            <Badge inline inlineSpacer={5} theme='navy'>
-              <a href='https://www.typescriptlang.org' rel='noreferrer' target='_blank'>
-                <Tag weight='duotone' /> Typescript
-              </a>
-            </Badge>
-            <Badge inline inlineSpacer={5} theme='navy'>
-              <a href='https://nextjs.org/docs/basic-features/typescript' rel='noreferrer' target='_blank'>
-                <Tag weight='duotone' /> Next.js
-              </a>
-            </Badge>
-            <Badge inline inlineSpacer={5} theme='navy'>
-              <a href='https://stitches.dev/docs/benchmarks' rel='noreferrer' target='_blank'>
-                {' '}
-                <Tag weight='duotone' /> Stitches
-              </a>
-            </Badge>
-            <Element top={8}>
-              <Button>
-                <Link href='/l/block'>
-                  <a>
-                    Start here <ArrowUpRight />
-                  </a>
-                </Link>
-              </Button>
-            </Element>
-          </Column>
-        </Section>
-      </Block>
-      <Block bottom={10} inner top={10}>
-        <Section>
-          <Column>
-            <Heading level={4}>Working on documentation, check back soon.</Heading>
-          </Column>
-        </Section>
-      </Block>
+              <Divider top={4} bottom={4} />
+              <Code>{'yarn add @cosmo-au/design-system\n\nyarn add dayjs phosphor-react react-hot-toast'}</Code>
+            </Box>
+          </Stack>
+          <Stack
+            direction='column'
+            width={33}
+            css={{
+              phone: {
+                paddingTop: '$5',
+              },
+            }}>
+            <Box theme='border'>
+              <Badge theme='pink' inline={5}>
+                <BoundingBox size={25} />
+              </Badge>
+              <Text as='h4' inline='auto'>
+                Wrap
+              </Text>
+
+              <Divider top={4} bottom={4} />
+
+              <Code>
+                {'/* Wrap your _app.tsx in the theme provider <Provider> */ \n \n' +
+                  "import { Provider } from '@cosmo-au/design-system';\n" +
+                  '\n' +
+                  '<Provider>\n' +
+                  '   <Component {...pageProps} />\n' +
+                  '</Provider>\n'}
+              </Code>
+            </Box>
+          </Stack>
+          <Stack
+            direction='column'
+            width={33}
+            css={{
+              phone: {
+                paddingTop: '$5',
+              },
+            }}>
+            <Box theme='border'>
+              <Badge theme='green' inline={5}>
+                <Cake size={25} />
+              </Badge>
+              <Text as='h4' inline='auto'>
+                Use
+              </Text>
+
+              <Divider top={4} bottom={4} />
+              <Code>{"/* Import your component and get to work. */ \n \nimport { Button } from '@cosmo-au/design-system';\n\n<Button>This is a button!</Button>\n"}</Code>
+            </Box>
+          </Stack>
+        </Stack>
+      </View>
     </>
   );
 }
-
-export default PagesHome as NextPage;

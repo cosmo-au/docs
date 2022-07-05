@@ -1,21 +1,21 @@
-import { Context, Cookies } from '@cosmo-au/design-system';
+/* eslint-disable import/no-unresolved */
+import { Provider } from '@cosmo-au/design-system';
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
 
-import '../../fonts.css';
 import Header from '../components/Header';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
-    <Context switchable>
+    <Provider>
       <DefaultSeo
         openGraph={{
-          title: 'Cosmo Design System',
+          title: 'Cosmo Developers',
           description: 'The Cosmo Design System enforces strict component APIs and performance parameters to streamline development across projects.',
           type: 'website',
           locale: 'en_AU',
-          url: 'https://design.cosmogroup.io',
-          site_name: 'Cosmo Design System',
+          url: 'https://developers.cosmogroup.io',
+          site_name: 'Cosmo Developers',
           images: [
             {
               url: 'https://cosmogroup.io/images/general/01.jpg',
@@ -23,12 +23,12 @@ function MyApp({ Component, pageProps }: AppProps) {
             },
           ],
         }}
-        titleTemplate={'%s | Cosmo Design System'}
+        titleTemplate={'%s | Cosmo Developers'}
       />
+
       <Header />
       <Component {...pageProps} />
-      <Cookies token='12032022' />
-    </Context>
+    </Provider>
   );
 }
 

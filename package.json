@@ -28,7 +28,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@cosmo-au/design-system": "^2.0.2",
+    "@cosmo-au/design-system": "^2.0.4",
     "dayjs": "^1.11.3",
     "next": "^12.2.0",
     "next-seo": "^5.4.0",

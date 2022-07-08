@@ -5,9 +5,9 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@cosmo-au/design-system@npm:^2.0.2":
-  version: 2.0.3
-  resolution: "@cosmo-au/design-system@npm:2.0.3"
+"@cosmo-au/design-system@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@cosmo-au/design-system@npm:2.0.4"
   peerDependencies:
     dayjs: "*"
     next: ">=12.1.0"
@@ -15,7 +15,7 @@ __metadata:
     react: ">=17.0.2"
     react-dom: ">=17.0.2"
     react-hot-toast: ">=2.0.0"
-  checksum: 6f268870c40927c0a7ac2e9fb25247523e160fe4882b7c6bfcc2a969a47e71c32f863a354f1364cc3b64bd3148ebf8780502ca6c6faa1dbe5ea5c6e67edf9c20
+  checksum: b80b52ab6a39f2de278fa6fa77576b6220b652c8ae158b035976dc2ceff515068c7176569a90a0516ad7831701cc8bfb2e1fd46069b33d6c8980b48b81094c20
   languageName: node
   linkType: hard
 
@@ -604,7 +604,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "docs@workspace:."
   dependencies:
-    "@cosmo-au/design-system": ^2.0.2
+    "@cosmo-au/design-system": ^2.0.4
     "@types/node": ^18.0.3
     "@types/react": ^18.0.15
     dayjs: ^1.11.3

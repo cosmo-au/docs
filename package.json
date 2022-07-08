@@ -1,7 +1,7 @@
 {
   "name": "docs",
   "description": "Documentation for the Cosmo Development team and partners.",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "author": "Jackson Dolman <jackson@cosmogroup.io>",
   "bugs": {
     "url": "https://github.com/cosmo-au/docs/issues"

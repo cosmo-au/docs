@@ -42,6 +42,7 @@ export default function Header(): JSX.Element {
               { label: 'Popover', value: '/popover' },
               { label: 'Table', value: '/table' },
               { label: 'Text', value: '/text' },
+              { label: 'Toast', value: '/toast' },
             ]}
           />
         </Stack>

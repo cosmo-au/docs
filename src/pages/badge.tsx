@@ -1,4 +1,4 @@
-import { View, Box, Stack, Table, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Code, Element } from '@cosmo-au/design-system';
+import { View, Box, Stack, Table, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Code, Element } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 import { Heartbeat } from 'phosphor-react';
 
@@ -25,7 +25,7 @@ export default function BadgeDocs(): JSX.Element {
               </Text>
               <Divider top={4} bottom={4} />
               <Element>
-                <Code>{"import { Badge } from '@cosmo-au/design-system';"}</Code>
+                <Code>{"import { Badge } from '@withcosmo/design-system';"}</Code>
                 <Code
                   css={{
                     paddingTop: '$3',

@@ -1,4 +1,4 @@
-import { View, Box, Stack, Table, Element, Code, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Avatar } from '@cosmo-au/design-system';
+import { View, Box, Stack, Table, Element, Code, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Avatar } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 import { Heartbeat } from 'phosphor-react';
 
@@ -25,7 +25,7 @@ export default function AvatarDocs(): JSX.Element {
               </Text>
               <Divider top={4} bottom={4} />
               <Element>
-                <Code>{"import { Avatar } from '@cosmo-au/design-system';"}</Code>
+                <Code>{"import { Avatar } from '@withcosmo/design-system';"}</Code>
                 <Code
                   css={{
                     paddingTop: '$3',

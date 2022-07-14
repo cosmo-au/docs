@@ -1,4 +1,4 @@
-import { View, Box, Element, Code, Stack, Table, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell } from '@cosmo-au/design-system';
+import { View, Box, Element, Code, Stack, Table, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 
 export default function DividerDocs(): JSX.Element {
@@ -24,7 +24,7 @@ export default function DividerDocs(): JSX.Element {
               </Text>
               <Divider top={4} bottom={4} />
               <Element>
-                <Code>{"import { Divider } from '@cosmo-au/design-system';"}</Code>
+                <Code>{"import { Divider } from '@withcosmo/design-system';"}</Code>
                 <Code
                   css={{
                     paddingTop: '$3',

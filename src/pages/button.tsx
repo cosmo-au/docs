@@ -1,4 +1,4 @@
-import { View, Box, Code, Element, Stack, Table, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Button } from '@cosmo-au/design-system';
+import { View, Box, Code, Element, Stack, Table, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Button } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 import { Heartbeat } from 'phosphor-react';
 
@@ -25,7 +25,7 @@ export default function ButtonDocs(): JSX.Element {
               </Text>
               <Divider top={4} bottom={4} />
               <Element>
-                <Code>{"import { Button } from '@cosmo-au/design-system';"}</Code>
+                <Code>{"import { Button } from '@withcosmo/design-system';"}</Code>
                 <Code
                   css={{
                     paddingTop: '$3',

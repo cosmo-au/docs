@@ -1,4 +1,4 @@
-import { View, Box, Element, Code, Stack, Table, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Dates } from '@cosmo-au/design-system';
+import { View, Box, Element, Code, Stack, Table, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Dates } from '@withcosmo/design-system';
 import dayjs from 'dayjs';
 import { NextSeo } from 'next-seo';
 import { Heartbeat } from 'phosphor-react';
@@ -26,7 +26,7 @@ export default function DatesDocs(): JSX.Element {
               </Text>
               <Divider top={4} bottom={4} />
               <Element>
-                <Code>{"import { Dates } from '@cosmo-au/design-system';"}</Code>
+                <Code>{"import { Dates } from '@withcosmo/design-system';"}</Code>
                 <Code
                   css={{
                     paddingTop: '$3',

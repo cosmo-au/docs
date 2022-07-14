@@ -1,4 +1,4 @@
-import { View, Stack, Text, Dropdown, Button, ProviderToggle } from '@cosmo-au/design-system';
+import { View, Stack, Text, Dropdown, Button, ProviderToggle } from '@withcosmo/design-system';
 import Link from 'next/link';
 import { GithubLogo } from 'phosphor-react';
 
@@ -53,7 +53,7 @@ export default function Header(): JSX.Element {
           css={{
             hidden: 'phone',
           }}>
-          <a href='https://github.com/cosmo-au/design-system' target='_blank'>
+          <a href='https://github.com/withcosmo/design-system' target='_blank'>
             <Button inline={4}>
               <GithubLogo weight='duotone' />
             </Button>

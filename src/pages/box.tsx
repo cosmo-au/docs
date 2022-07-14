@@ -1,4 +1,4 @@
-import { View, Element, Box, Stack, Table, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Code } from '@cosmo-au/design-system';
+import { View, Element, Box, Stack, Table, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Code } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 import { Heartbeat } from 'phosphor-react';
 
@@ -25,7 +25,7 @@ export default function BoxDocs(): JSX.Element {
               </Text>
               <Divider top={4} bottom={4} />
               <Element>
-                <Code>{"import { Box } from '@cosmo-au/design-system';"}</Code>
+                <Code>{"import { Box } from '@withcosmo/design-system';"}</Code>
                 <Code
                   css={{
                     paddingTop: '$3',

@@ -1,4 +1,4 @@
-import { Stack, Text, View, Box, Badge, Divider, Code } from '@cosmo-au/design-system';
+import { Stack, Text, View, Box, Badge, Divider, Code } from '@withcosmo/design-system';
 import { BoundingBox, Cake, Download } from 'phosphor-react';
 
 export default function Home(): JSX.Element {
@@ -40,7 +40,7 @@ export default function Home(): JSX.Element {
               </Text>
 
               <Divider top={4} bottom={4} />
-              <Code>{'yarn add @cosmo-au/design-system\n\nyarn add dayjs phosphor-react react-hot-toast'}</Code>
+              <Code>{'yarn add @withcosmo/design-system\n\nyarn add dayjs phosphor-react react-hot-toast'}</Code>
             </Box>
           </Stack>
           <Stack
@@ -63,7 +63,7 @@ export default function Home(): JSX.Element {
 
               <Code>
                 {'/* Wrap your _app.tsx in the theme provider <Provider> */ \n \n' +
-                  "import { Provider } from '@cosmo-au/design-system';\n" +
+                  "import { Provider } from '@withcosmo/design-system';\n" +
                   '\n' +
                   '<Provider>\n' +
                   '   <Component {...pageProps} />\n' +
@@ -88,7 +88,7 @@ export default function Home(): JSX.Element {
               </Text>
 
               <Divider top={4} bottom={4} />
-              <Code>{"/* Import your component and get to work. */ \n \nimport { Button } from '@cosmo-au/design-system';\n\n<Button>This is a button!</Button>\n"}</Code>
+              <Code>{"/* Import your component and get to work. */ \n \nimport { Button } from '@withcosmo/design-system';\n\n<Button>This is a button!</Button>\n"}</Code>
             </Box>
           </Stack>
         </Stack>

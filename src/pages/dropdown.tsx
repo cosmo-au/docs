@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { View, Box, Element, Code, Stack, Table, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Button, Dropdown } from '@cosmo-au/design-system';
+import { View, Box, Element, Code, Stack, Table, Text, Badge, Divider, TableHead, TableHeadCell, TableBody, TableRow, TableCell, Button, Dropdown } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 import { Heartbeat } from 'phosphor-react';
 import { useState } from 'react';
@@ -33,7 +33,7 @@ export default function DropdownDocs(): JSX.Element {
               <Divider top={4} bottom={4} />
 
               <Element>
-                <Code>{"import { Dropdown } from '@cosmo-au/design-system';"}</Code>
+                <Code>{"import { Dropdown } from '@withcosmo/design-system';"}</Code>
                 <Code
                   css={{
                     paddingTop: '$3',

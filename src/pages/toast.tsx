@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { View, Element, Code, Box, Stack, Text, Badge, Divider, Button } from '@cosmo-au/design-system';
+import { View, Element, Code, Box, Stack, Text, Badge, Divider, Button } from '@withcosmo/design-system';
 import { NextSeo } from 'next-seo';
 import toast from 'react-hot-toast';
 

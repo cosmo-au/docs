@@ -1,10 +1,27 @@
 {
   "name": "docs",
   "description": "Documentation for the Cosmo Development team and partners.",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "author": "Jackson Dolman <jackson@cosmogroup.io>",
   "bugs": {
     "url": "https://github.com/withcosmo/docs/issues"
+  },
+  "dependencies": {
+    "@withcosmo/design-system": "^2.0.7",
+    "dayjs": "^1.11.4",
+    "next": "^12.2.3",
+    "next-seo": "^5.5.0",
+    "phosphor-react": "^1.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.6",
+    "@types/react": "^18.0.15",
+    "eslint": "^8.20.0",
+    "eslint-config-dolmios": "^1.0.5",
+    "typescript": "^4.7.4"
   },
   "homepage": "https://github.com/withcosmo/docs#readme",
   "license": "MIT",
@@ -19,22 +36,5 @@
     "clean": "next lint && prettier --write '**/*.{js,jsx,tsx,ts}' '!node_modules/**' '!.git/**' '!.next/**' ",
     "dev": "next dev -p 420",
     "lint": "next lint"
-  },
-  "devDependencies": {
-    "@types/node": "^18.0.3",
-    "@types/react": "^18.0.15",
-    "eslint": "^8.19.0",
-    "eslint-config-dolmios": "^1.0.5",
-    "typescript": "^4.7.4"
-  },
-  "dependencies": {
-    "@withcosmo/design-system": "^2.0.6",
-    "dayjs": "^1.11.3",
-    "next": "^12.2.2",
-    "next-seo": "^5.4.0",
-    "phosphor-react": "^1.4.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-hot-toast": "^2.3.0"
   }
 }
